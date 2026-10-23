@@ -7,13 +7,13 @@ type Props = { icon: string | null; onClick: (e: React.MouseEvent) => void }
 
 export default function GoalIcon(props: Props) {
   return (
-    <TransparentButton onClick={props.onClick}>
+    <TransparentButton type="button" aria-label="Change goal icon" onClick={props.onClick}>
       <Icon>{props.icon}</Icon>
     </TransparentButton>
   )
 }
 
 const Icon = styled.h1`
-  font-size: 6rem;
+  font-size: 5.5rem;
   cursor: pointer;
 `
